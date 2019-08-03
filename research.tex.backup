@@ -9,7 +9,7 @@
 %\author[2]{Felix Kong}
 \affil[1]{Department of Electrical \& Electronic Engineering, University of Bristol}
 %\affil[2]{Department of Mechanical Engineering, University of Bristol}
-\title{Foot in the Pave: Generating Electricity with Footsteps}
+\title{Your Foot in the Pave: Generating Electricity with Footsteps}
 
 \renewcommand\IEEEkeywordsname{Keywords}
 \newcommand{\figref}[1]{\figurename~\ref{#1}}
@@ -21,8 +21,15 @@
 This document examines the plausibility \& efficiency of generating power via footsteps, which could be used on pavements to generate electricity used for various purposes, depending on the user's preferences.
 \end{abstract}
 
+% \begin{IEEEkeywords}
+%     Broad band networks, quality of service, WDM.
+% \end{IEEEkeywords}
+ 
+% \section{Preamble}
+% The application of utilising footsteps to generate electricity adapts the mechanisms of a dynamo (which generates electricity from mechanical torque input) and that of a pressure plate (akin to those used in vintage spinning-top toys). Its applications, theoretically, could be used to alleviate lack of electricity in remote regions (given a large amount of foot-based commuting) or help local businesses collect data in regards to visitors/browsers \& determine their best course of business action.
+
 \section{Mechanism Proposal}
-The proposed mechanism to generate electricity is comprised of multiple stages, and such operate in unison to provide the output voltage at the output stage.
+The proposed mechanism to generate electricity is comprised of multiple components, and such operate in unison to provide the output voltage at the output stage.
 
 \subsection{Components Analysis}
 The mechanism itself involves a button/plate that, when pressed, would push a spiral down an entry point, compressing a spring. When such button/plate (thus, the spring) is released, the spiral is released to its initial position, in turn spinning the flywheel disc/gear that such spiral is fixed to, causing such to move in a rotational manner.

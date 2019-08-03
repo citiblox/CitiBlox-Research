@@ -1,9 +1,9 @@
-PWD d:/CitiBlox Research
+PWD c:/Users/jpiam/Documents/GitHub/CitiBlox-Research
 INPUT c:/texlive/2018/texmf.cnf
 INPUT c:/texlive/2018/texmf-dist/web2c/texmf.cnf
 INPUT c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT d:/CitiBlox Research/research.tex
-OUTPUT d:/CitiBlox Research/research.log
+INPUT c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.tex
+OUTPUT c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.log
 INPUT c:/texlive/2018/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
 INPUT c:/texlive/2018/texmf-dist/tex/latex/IEEEtran/IEEEtran.cls
 INPUT c:/texlive/2018/texmf-dist/tex/latex/psnfss/ot1ptm.fd
@@ -73,9 +73,9 @@ INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsbsy.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
 INPUT c:/texlive/2018/texmf-dist/tex/latex/amsmath/amsopn.sty
-INPUT d:/CitiBlox Research/research.aux
-INPUT d:/CitiBlox Research/research.aux
-OUTPUT d:/CitiBlox Research/research.aux
+INPUT c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.aux
+INPUT c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.aux
+OUTPUT c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.aux
 INPUT c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 INPUT c:/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
@@ -113,11 +113,11 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmr7t.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmrc7t.tfm
-INPUT d:/CitiBlox Research/./images/mechanism_side_wlabel.png
+INPUT c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/./images/mechanism_side_wlabel.png
 INPUT ./images/mechanism_side_wlabel.png
-OUTPUT d:/CitiBlox Research/research.pdf
+OUTPUT c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.pdf
 INPUT ./images/mechanism_side_wlabel.png
-INPUT d:/CitiBlox Research/./images/mechanism_winding_top.png
+INPUT c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/./images/mechanism_winding_top.png
 INPUT ./images/mechanism_winding_top.png
 INPUT ./images/mechanism_winding_top.png
 INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmr7t.vf
@@ -142,7 +142,7 @@ INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7.tfm
 INPUT c:/texlive/2018/texmf-dist/fonts/vf/adobe/times/ptmb7t.vf
 INPUT c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb8r.tfm
-INPUT d:/CitiBlox Research/research.aux
+INPUT c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.aux
 INPUT c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb
 INPUT c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb
