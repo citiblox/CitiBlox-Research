@@ -172,10 +172,12 @@ This section concerns the generator's output characteristics \& how such is link
 \subsection{Assumptions of System}
 Given reality, that the system will encounter losses, and thus will not be 100\% efficient. This therefore warrants for a number of assumptions to be made, to allow easier calculations \& analyses of the system.
 \begin{itemize}
+    \item An individual steps onto the slab \& pushes the spiral to its maximum length
     \item There is no friction within the spiral - this results in the flywheel rotation a full revolution per one successful spiral turn
     \item Thermal losses (due to friction or thermal dissipation by the components) are neglegible
     \item The material themselves do not wear down or permanenently change form, thus allowing for sustained usage
-    \item The flywheel rotates in a constant speed (thus, no acceleration or deceleration), akin to a step response
+    \item The spiral's upward motion (and thus the flywheel's rotation speed) is constant
+    \item The torque \& angular speed due to the flywheel is fully transferred to the motor/generator
 \end{itemize}
 
 \subsection{Known Quantities}
@@ -184,7 +186,7 @@ The following electrical values are either known or determined by the chosen equ
     \item The \textbf{electromagnetic constant}, \textbf{reluctance} and \textbf{voltage rating} of the motor/generator
     \item Desired voltage at load (i.e. 5V for a rechargeable battery)
 \end{itemize}
-% TODO Add values for mech!!
+Similarly, on the mechanical domain one understands that the number of \textbf{spiral turns} is controlled by the spiral rod, and thus is a known value.
 
 \subsection{Generator Output Characteristics}
 The generator's output mechanism can be modelled as an equivalent circuit per \figref{circuit:generator}, where the following terms are defined:
@@ -213,15 +215,17 @@ The generator's output mechanism can be modelled as an equivalent circuit per \f
 \end{figure}
 
 Such is governed by the equations given by \eqref{eq:dcmotor}, where $k_e$ is the \textbf{electromagnetic constant} of the motor/generator.
-\begin{equation}
+\begin{subequations}
     \label{eq:dcmotor}
-    \begin{aligned}
-        T &= k_e I_a\\
+    \begin{align}
+        T &= k_e I_a
+        \label{eq:dcmotor:torque}\\
         E &= k_e \omega
-    \end{aligned}
-\end{equation}
+        \label{eq:dcmotor:emf}
+    \end{align}
+\end{subequations}
 
-Given \figref{circuit:generator} one can surmise the following information given by \eqref{eq:circuit} and \eqref{eq:dcmotor}.
+Given \figref{circuit:generator} one can surmise the following information given by \eqref{eq:dcmotor}.
 \begin{equation}
     \label{eq:circuit}
     \begin{aligned}
@@ -229,9 +233,16 @@ Given \figref{circuit:generator} one can surmise the following information given
         &= k_e\omega - \left(\frac{T}{k_e}\right)R_a
     \end{aligned}
 \end{equation}
+where \(\omega\) and \(T\) are determined by the prior stage, specifically the mechanical input stage.
 
 \subsection{Mechanical Input Characteristics}
 % Calculate general omega/tau from spiral rod!!
+\begin{subequations}
+    For one spiral turn
+    \begin{align}
+        \omega &= \frac{n 2\pi r}{\Delta t}
+    \end{align}
+\end{subequations}
 
 
 % \section{Simulation}
