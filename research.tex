@@ -1,4 +1,4 @@
-\documentclass[conference]{ieeetran}
+\documentclass[conference]{IEEEtran}
 \usepackage{authblk}
 \usepackage{graphicx}
 \graphicspath{ {./images/} }
@@ -16,7 +16,7 @@
 
 \renewcommand\IEEEkeywordsname{Keywords}
 \newcommand{\figref}[1]{\figurename~\ref{#1}}
-\newcommand{\compref}[1]{Comp.~\ref{#1}}
+\newcommand{\compref}[1]{Component~\ref{#1}}
 \newcommand{\stepref}[1]{Step~\ref{#1}}
 
 \begin{document}
@@ -62,7 +62,7 @@ The mechanism is intended to operate per the following procedures (refer to labe
     \item\label{item:op:stepdn} One steps onto \compref{item:comp:plate}, pushing \compref{item:comp:spiral} downwards \& compressing the support spring
     \item\label{item:op:spiraldn} \compref{item:comp:spiral} moving downwards passes through slot in \compref{item:comp:flywheel}
     \item\label{item:op:stepup} One steps away from \compref{item:comp:plate}, resulting in the spring being released; such results in \compref{item:comp:spiral} moving upwards to its original position
-    \item\label{item:op:spin} \compref{item:comp:spiral} moving upwards now results in \compref{item:comp:flywheel} rotating, causing \compref{item:comp:motor}'s axle to also be rotated (due to the bevel gear connection)
+    \item\label{item:op:spin} \compref{item:comp:spiral} moving upwards now results in \compref{item:comp:flywheel} rotating, causing \compref{item:comp:motor}'s axle to also be rotated (due to the gear connection)
     \item\label{item:op:induce} The rotation of \compref{item:comp:motor}'s axle results in EMF being generated at its output
 \end{enumerate}
 
@@ -170,7 +170,7 @@ This section concerns the generator's output characteristics \& how such is link
 % \end{displaymath}
 
 \subsection{Assumptions of System}
-Given reality, it is of no surprise that the system will encounter losses, and thus will not be 100\% efficient. This therefore warrants for a number of assumptions to be made, to allow easier calculations \& analyses of the system.
+Given reality, that the system will encounter losses, and thus will not be 100\% efficient. This therefore warrants for a number of assumptions to be made, to allow easier calculations \& analyses of the system.
 \begin{itemize}
     \item There is no friction within the spiral - this results in the flywheel rotation a full revolution per one successful spiral turn
     \item Thermal losses (due to friction or thermal dissipation by the components) are neglegible
@@ -178,12 +178,21 @@ Given reality, it is of no surprise that the system will encounter losses, and t
     \item The flywheel rotates in a constant speed (thus, no acceleration or deceleration), akin to a step response
 \end{itemize}
 
+\subsection{Known Quantities}
+The following electrical values are either known or determined by the chosen equipment.
+\begin{itemize}
+    \item The \textbf{electromagnetic constant}, \textbf{reluctance} and \textbf{voltage rating} of the motor/generator
+    \item Desired voltage at load (i.e. 5V for a rechargeable battery)
+\end{itemize}
+% TODO Add values for mech!!
+
 \subsection{Generator Output Characteristics}
 The generator's output mechanism can be modelled as an equivalent circuit per \figref{circuit:generator}, where the following terms are defined:
 \begin{itemize}
     \item $\omega$/$T$: Angular speed \& torque of generator's input axle, dictated by its transmission gear \& stages
     \item $E$: Output EMF of generator
-    \item $\mathcal{R}_a$: Generator reluctance
+    % \item $\mathcal{R}_a$: Generator reluctance
+    \item $R_a$: Generator reluctance
     \item $I_a$/$V_a$: Current \& voltage at load output of generator
 \end{itemize}
 
@@ -193,7 +202,7 @@ The generator's output mechanism can be modelled as an equivalent circuit per \f
     \caption{Equivalent circuit of generator and its output}
     \begin{circuitikz}
         \draw (0, 0) to[Telmech=G, n=generator] (0, 2) to[short, -*] (1, 2);
-        \draw (1, 2) to[R=\text{\(\mathcal{R}_a\)}, i=\(I_a\), -o] (4,2);
+        \draw (1, 2) to[R=\text{\(R_a\)}, i=\(I_a\), -o] (4,2);
         \draw (1, 0) to [open, v>=$E$] (1, 2);
         \draw (0, 0) to[short, -*] (1, 0) to[short, -o] (4, 0);
         \draw (4, 0) to [open, v>=$V_{a}$] (4, 2);
@@ -224,13 +233,17 @@ Given \figref{circuit:generator} one can surmise the following information given
 \subsection{Mechanical Input Characteristics}
 % Calculate general omega/tau from spiral rod!!
 
+
+% \section{Simulation}
+% One utilises MATLAB's SimScape to simulate such mechanisms, and is comprised of three stages.
+% % Check if intro line is necessary and/or needs amendment!
+
+% \subsection{Schematic Diagram}
+
+% ------------------------------
+% ------------------------------
+
 \medskip
 \bibliographystyle{IEEEtran}
 \bibliography{references}
-
-\section{Simulation}
-One utilises MATLAB's SimScape to simulate such mechanisms, and is comprised of three stages.
-% Check if intro line is necessary and/or needs amendment!
-
-\subsection{Schematic Diagram}
 \end{document}
