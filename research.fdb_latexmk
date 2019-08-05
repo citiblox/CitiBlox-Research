@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex research"] 0 "research.aux" "research.bbl" "research" 0
+["bibtex research"] 1565027982 "research.aux" "research.bbl" "research" 1565027990
   "c:/texlive/2018/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1551492519 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "references.bib" 1564855145 1124 4e6b8367e94d119fbc8cfea7e6a0202e ""
-  "research.aux" 0 -1 0 ""
+  "research.aux" 1565027988 2048 f4cffe060106aaab3086a5f952dc5c1a ""
   (generated)
-  "research.blg"
   "research.bbl"
-["pdflatex"] 1565027883 "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.tex" "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.pdf" "research" 1565027883
-  "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.aux" 1565027883 9 a94a2480d3289e625eea47cd1b285758 ""
-  "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.tex" 1565027875 16025 586d491afdff1a180f6a6d62122482cc ""
+  "research.blg"
+["pdflatex"] 1565027986 "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.tex" "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.pdf" "research" 1565027990
+  "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.aux" 1565027988 2048 f4cffe060106aaab3086a5f952dc5c1a ""
+  "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.tex" 1565027985 16024 24f5c285a861f88dce45894402bdb834 ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1551493136 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1551493360 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1551495027 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -165,12 +165,12 @@
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1551495641 4216517 2b957829723a4c6070249ad19416a7d8 ""
   "c:/texlive/2018/texmf.cnf" 1551495433 673 4ae7b2f49cee444c5343a45b5d0f169c ""
   "images/mech_wlabel.png" 1565027875 8723 994a029a934e399d9dfb3e23a05f143e ""
-  "research.aux" 0 -1 0 ""
-  "research.bbl" 0 -1 0 "bibtex research"
-  "research.tex" 1565027875 16025 586d491afdff1a180f6a6d62122482cc ""
+  "research.aux" 1565027988 2048 f4cffe060106aaab3086a5f952dc5c1a ""
+  "research.bbl" 1565027983 1107 cf315d1a9442bc61800d12efbf35a7f9 "bibtex research"
+  "research.tex" 1565027985 16024 24f5c285a861f88dce45894402bdb834 ""
   (generated)
-  "research.log"
   "research.aux"
-  "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.log"
-  "research.pdf"
   "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.pdf"
+  "research.pdf"
+  "research.log"
+  "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.log"
