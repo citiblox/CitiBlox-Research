@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.2)  4 AUG 2019 15:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.19 (TeX Live 2018/W32TeX) (preloaded format=pdflatex 2019.3.2)  5 AUG 2019 18:58
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -485,15 +485,138 @@ File: ./images/mech_wlabel.png Graphic file (type png)
 <use ./images/mech_wlabel.png>
 Package pdftex.def Info: ./images/mech_wlabel.png  used on input line 48.
 (pdftex.def)             Requested size: 252.0pt x 185.23569pt.
- [1{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
 
 
- <./images/mech_wlabel.png>] (c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.bbl
-Underfull \hbox (badness 2744) in paragraph at lines 25--28
-[]\OT1/ptm/m/n/10 N. Simp-son, \OT1/ptm/m/it/10 Electro-Mechanical En-ergy Con-ver-sion\OT1/ptm/m/n/10 .
- []
+LaTeX Warning: Reference `fig:mech_wlabel' on page 1 undefined on input line 51.
 
-)
+
+LaTeX Warning: Reference `fig:mech_wlabel' on page 1 undefined on input line 51.
+
+
+LaTeX Warning: Reference `item:comp:flywheel' on page 1 undefined on input line 54.
+
+
+LaTeX Warning: Reference `item:comp:plate' on page 1 undefined on input line 54.
+
+
+LaTeX Warning: Reference `item:comp:spiral' on page 1 undefined on input line 55.
+
+
+LaTeX Warning: Reference `item:comp:flywheel' on page 1 undefined on input line 56.
+
+
+LaTeX Warning: Reference `fig:mech_wlabel' on page 1 undefined on input line 60.
+
+
+LaTeX Warning: Reference `item:comp:plate' on page 1 undefined on input line 62.
+
+
+LaTeX Warning: Reference `item:comp:spiral' on page 1 undefined on input line 62.
+
+
+LaTeX Warning: Reference `item:comp:spiral' on page 1 undefined on input line 63.
+
+
+LaTeX Warning: Reference `item:comp:flywheel' on page 1 undefined on input line 63.
+
+
+LaTeX Warning: Reference `item:comp:plate' on page 1 undefined on input line 64.
+
+
+LaTeX Warning: Reference `item:comp:spiral' on page 1 undefined on input line 64.
+
+
+LaTeX Warning: Reference `item:comp:spiral' on page 1 undefined on input line 65.
+
+
+LaTeX Warning: Reference `item:comp:flywheel' on page 1 undefined on input line 65.
+
+
+LaTeX Warning: Reference `item:comp:motor' on page 1 undefined on input line 65.
+
+
+LaTeX Warning: Reference `item:comp:motor' on page 1 undefined on input line 66.
+
+
+LaTeX Warning: Reference `item:op:stepdn' on page 1 undefined on input line 69.
+
+
+LaTeX Warning: Reference `item:op:spiraldn' on page 1 undefined on input line 69.
+
+
+LaTeX Warning: Reference `item:op:spin' on page 1 undefined on input line 69.
+
+
+LaTeX Warning: Reference `item:op:induce' on page 1 undefined on input line 69.
+
+
+LaTeX Warning: Citation `industrial2' on page 1 undefined on input line 147.
+
+[1{c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}
+
+
+ <./images/mech_wlabel.png>]
+
+LaTeX Warning: Reference `circuit:generator' on page 2 undefined on input line 192.
+
+
+LaTeX Warning: Reference `eq:dcmotor' on page 2 undefined on input line 217.
+
+
+LaTeX Warning: Reference `circuit:generator' on page 2 undefined on input line 228.
+
+
+LaTeX Warning: Reference `eq:dcmotor' on page 2 undefined on input line 228.
+
+
+LaTeX Warning: Reference `eq:hooke' on page 2 undefined on input line 248.
+
+
+LaTeX Warning: Reference `eq:epe' on page 2 undefined on input line 254.
+
+
+LaTeX Warning: Reference `eq:hooke' on page 2 undefined on input line 254.
+
+
+LaTeX Warning: Reference `eq:spiral' on page 2 undefined on input line 260.
+
+
+LaTeX Warning: Reference `eq:epe' on page 2 undefined on input line 267.
+
+
+LaTeX Warning: Reference `eq:spiral' on page 2 undefined on input line 267.
+
+c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.tex:269: Undefined control sequence.
+l.269     \frac{1}{2}kx^2 = 2\piNFr
+                                    = 2\piNF_{edge}d
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.tex:269: Undefined control sequence.
+l.269     \frac{1}{2}kx^2 = 2\piNFr = 2\piNF
+                                            _{edge}d
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `eq:f_edge' on page 2 undefined on input line 272.
+
+c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.tex:275: Undefined control sequence.
+l.275     \frac{1}{2}kx^2 = 2\piNF
+                                  _{edge}d
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+No file research.bbl.
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -505,22 +628,27 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[2
+[2] (c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.aux)
 
-] (c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.aux) ) 
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
 Here is how much of TeX's memory you used:
- 20347 strings out of 492649
- 478307 string characters out of 6133385
- 615454 words of memory out of 5000000
- 23929 multiletter control sequences out of 15000+600000
+ 20341 strings out of 492649
+ 478088 string characters out of 6133385
+ 616321 words of memory out of 5000000
+ 23925 multiletter control sequences out of 15000+600000
  41145 words of font info for 88 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  62i,11n,56p,568b,777s stack positions out of 5000i,500n,10000p,200000b,80000s
-{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.pdf (2 pages, 128489 bytes).
+{c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc}<c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb><c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmr8a.pfb><c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.pdf (2 pages, 127144 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
- 40 compressed objects within 1 object stream
+ 61 PDF objects out of 1000 (max. 8388607)
+ 43 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -176,7 +176,7 @@ Given reality, that the system will encounter losses, and thus will not be 100\%
     \item There is no friction within the spiral - this results in the flywheel rotation a full revolution per one successful spiral turn
     \item Thermal losses (due to friction or thermal dissipation by the components) are neglegible
     \item The material themselves do not wear down or permanenently change form, thus allowing for sustained usage
-    \item The spiral's upward motion (and thus the flywheel's rotation speed) is constant
+    % \item The spiral's upward motion (and thus the flywheel's rotation speed) is constant
     \item The torque \& angular speed due to the flywheel is fully transferred to the motor/generator
 \end{itemize}
 
@@ -237,12 +237,51 @@ where \(\omega\) and \(T\) are determined by the prior stage, specifically the m
 
 \subsection{Mechanical Input Characteristics}
 % Calculate general omega/tau from spiral rod!!
-\begin{subequations}
-    For one spiral turn
-    \begin{align}
-        \omega &= \frac{n 2\pi r}{\Delta t}
-    \end{align}
-\end{subequations}
+The following assumptions are to be made in regards to the mechanical stage, to alleviate calculations.
+\begin{itemize}
+    \item The mass of the flywheel is represented as an arbitrary cylindrical mass of \(M_f\) kg with a radius of \(r_f\) metres
+    \item The mass of the slab is, similarly, represented as a point mass of \(M_s\) kg
+    \item The spring continuously obeys Hooke's Law
+\end{itemize}
+
+\subsubsection{Spiral Rod vs Flywheel}
+Given the operations of the mechanism, compressing the spring to a certain distance \(x\) from its original position results in a force being exerted outwards (with intent of returning to its original shape), and thus obeys Hooke's Law per \eqref{eq:hooke}.
+\begin{equation}
+    \label{eq:hooke}
+    F = -kx
+\end{equation}
+
+Due to Conservation of Energy \& the assumptions made prior, it can be surmised that the elastic potential energy of the spring is fully transferred to the next stage, per \eqref{eq:epe} as derived from \eqref{eq:hooke}.
+\begin{equation}
+    \label{eq:epe}
+    \text{\textit{Work Done}} = \Delta PE = \frac{1}{2}kx^2
+\end{equation}
+
+As the spiral rod passes through the opening gap inside the flywheel, force is exerted by the spiral rod incident to the opening's sides (assumed here to be point incidents), where work done by such action is given per \eqref{eq:spiral}.
+\begin{equation}
+    \label{eq:spiral}
+    \text{\textit{Work Done}} = Fr\theta \equiv T\theta
+\end{equation}
+where \(r\) is the radius from the centre of the flywheel's opening to its edges, \(F\) is (assumedly point) force exerted onto the opening at its edge, and \(\theta\) is the total angle which flywheel travels (in radians), given to be \(2\pi N\) per \(N\) spiral turns.
+
+Equating \eqref{eq:epe} and \eqref{eq:spiral} (per Conservation of Energy and the full-efficiency assumption) results in an expression for force.
+\begin{displaymath}
+    \frac{1}{2}kx^2 = 2\piNFr = 2\piNF_{edge}d
+\end{displaymath}
+
+In the case of the equated expression, one could then obtain the tangential force exerted at the edge of the flywheel's body, per \eqref{eq:f_edge}.
+\begin{equation}
+    \label{eq:f_edge}
+    \frac{1}{2}kx^2 = 2\piNF_{edge}d
+\end{equation}
+
+
+% \begin{subequations}
+%     For one spiral turn
+%     \begin{align}
+%         \omega &= \frac{n 2\pi}{\Delta t} = \frac{2\pi}{\Delta t}
+%     \end{align}
+% \end{subequations}
 
 
 % \section{Simulation}

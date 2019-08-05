@@ -1,14 +1,14 @@
 # Fdb version 3
-["bibtex research"] 1564926056 "research.aux" "research.bbl" "research" 1564928311
+["bibtex research"] 0 "research.aux" "research.bbl" "research" 0
   "c:/texlive/2018/texmf-dist/bibtex/bst/IEEEtran/IEEEtran.bst" 1551492519 57748 7c8250ecf02814ce6ddc0cdbb63df1dd ""
   "references.bib" 1564855145 1124 4e6b8367e94d119fbc8cfea7e6a0202e ""
-  "research.aux" 1564928309 1817 5fdade41b9b81529d14a37de71a0c352 ""
+  "research.aux" 0 -1 0 ""
   (generated)
   "research.blg"
   "research.bbl"
-["pdflatex"] 1564928306 "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.tex" "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.pdf" "research" 1564928311
-  "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.aux" 1564928309 1817 5fdade41b9b81529d14a37de71a0c352 ""
-  "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.tex" 1564928304 13756 66ac72e0c7cbb42aa72872f038f7adb2 ""
+["pdflatex"] 1565027883 "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.tex" "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.pdf" "research" 1565027883
+  "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.aux" 1565027883 9 a94a2480d3289e625eea47cd1b285758 ""
+  "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.tex" 1565027875 16025 586d491afdff1a180f6a6d62122482cc ""
   "c:/texlive/2018/texmf-dist/fonts/enc/dvips/base/8r.enc" 1551493136 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "c:/texlive/2018/texmf-dist/fonts/map/fontname/texfonts.map" 1551493360 3332 103109f5612ad95229751940c61aada0 ""
   "c:/texlive/2018/texmf-dist/fonts/tfm/adobe/times/ptmb7t.tfm" 1551495027 2172 fd0c924230362ff848a33632ed45dc23 ""
@@ -39,6 +39,7 @@
   "c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb" 1551492576 36299 5f9df58c2139e7edcf37c8fca4bd384d ""
   "c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb" 1551492577 36281 c355509802a035cadc5f15869451dcee ""
   "c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1551492577 35752 024fb6c41858982481f6968b5fc26508 ""
+  "c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1551492577 32762 7fee39e011c23b3589931effd97b9702 ""
   "c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb" 1551492577 32569 5e5ddc8df908dea60932f3c484a54c0d ""
   "c:/texlive/2018/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb" 1551492577 32716 08e384dc442464e7285e891af9f45947 ""
   "c:/texlive/2018/texmf-dist/fonts/type1/urw/times/utmb8a.pfb" 1551495027 44729 fea0975e20ec51c992338362f05f1146 ""
@@ -163,13 +164,13 @@
   "c:/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1551495486 2743352 fb4b018d60e9400137e96132b0e933fe ""
   "c:/texlive/2018/texmf-var/web2c/pdftex/pdflatex.fmt" 1551495641 4216517 2b957829723a4c6070249ad19416a7d8 ""
   "c:/texlive/2018/texmf.cnf" 1551495433 673 4ae7b2f49cee444c5343a45b5d0f169c ""
-  "images/mech_wlabel.png" 1564855145 20297 89030413fc8eca0b9da63de29884c905 ""
-  "research.aux" 1564928309 1817 5fdade41b9b81529d14a37de71a0c352 ""
-  "research.bbl" 1564926057 1107 cf315d1a9442bc61800d12efbf35a7f9 "bibtex research"
-  "research.tex" 1564928304 13756 66ac72e0c7cbb42aa72872f038f7adb2 ""
+  "images/mech_wlabel.png" 1565027875 8723 994a029a934e399d9dfb3e23a05f143e ""
+  "research.aux" 0 -1 0 ""
+  "research.bbl" 0 -1 0 "bibtex research"
+  "research.tex" 1565027875 16025 586d491afdff1a180f6a6d62122482cc ""
   (generated)
+  "research.log"
   "research.aux"
   "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.log"
   "research.pdf"
-  "research.log"
   "c:/Users/jpiam/Documents/GitHub/CitiBlox-Research/research.pdf"
