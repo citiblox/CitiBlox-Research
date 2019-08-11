@@ -9,10 +9,10 @@
 \usepackage[european resistors, straightvoltages]{circuitikz}
 
 \author[1]{Jay Piamjariyakul}
-%\author[2]{Felix Kong}
+\author[2]{Felix Kong}
 \affil[1]{Undergraduate, Department of Electrical \& Electronic Engineering, University of Bristol}
-%\affil[2]{Department of Mechanical Engineering, University of Bristol}
-\title{Hot \& Motored: Generating Electricity with Footsteps}
+\affil[2]{Department of Mechanical Engineering, University of Bristol}
+\title{Generating Electricity with Footsteps: Analysis of the Proposed Mechanism}
 
 \renewcommand\IEEEkeywordsname{Keywords}
 \newcommand{\figref}[1]{\figurename~\ref{#1}}
@@ -24,8 +24,6 @@
 \maketitle
 \begin{abstract}
 This document examines the plausibility \& efficiency of generating power via footsteps, which could be used on pavements to generate electricity used for various purposes, depending on the user's preferences.
-\\
-Excuse the pun.
 \end{abstract}
 
 % \begin{IEEEkeywords}
@@ -177,7 +175,8 @@ Given reality, that the system will encounter losses, and thus will not be 100\%
     \item Thermal losses (due to friction or thermal dissipation by the components) are neglegible
     \item The material themselves do not wear down or permanenently change form, thus allowing for sustained usage
     % \item The spiral's upward motion (and thus the flywheel's rotation speed) is constant
-    \item The torque \& angular speed due to the flywheel is fully transferred to the motor/generator
+    \item The tangential force on the flywheel is fully transferred to the motor/generator
+    \item The flywheel and its opening component is regarded as a singular entity
 \end{itemize}
 
 \subsection{Known Quantities}
@@ -244,36 +243,90 @@ The following assumptions are to be made in regards to the mechanical stage, to 
     \item The spring continuously obeys Hooke's Law
 \end{itemize}
 
-\subsubsection{Spiral Rod vs Flywheel}
+\subsubsection{Force Exerted by Spring}
 Given the operations of the mechanism, compressing the spring to a certain distance \(x\) from its original position results in a force being exerted outwards (with intent of returning to its original shape), and thus obeys Hooke's Law per \eqref{eq:hooke}.
 \begin{equation}
     \label{eq:hooke}
     F = -kx
 \end{equation}
+where \(x\) is the total distance compressed by the spring.
 
-Due to Conservation of Energy \& the assumptions made prior, it can be surmised that the elastic potential energy of the spring is fully transferred to the next stage, per \eqref{eq:epe} as derived from \eqref{eq:hooke}.
+% Due to Conservation of Energy \& the assumptions made prior, it can be surmised that the elastic potential energy of the spring is fully transferred to the next stage, per \eqref{eq:epe} as derived from \eqref{eq:hooke}.
+% \begin{equation}
+%     \label{eq:epe}
+%     \text{\textit{Work Done}} = \Delta PE = \frac{1}{2}kx^2
+% \end{equation}
+
+\subsubsection{Tangential Force of Flywheel}
+As the spiral rod passes through the opening gap inside the flywheel, force is exerted by the spiral rod incident to the opening's sides (assumed here to be point incidents). It can be assumed that, during upward motion, the flywheel and the spiral port moves as a single object, and thus is abstracted as a single entity in the flywheel itself.
+
+% Work done by such action is then given per \eqref{eq:spiral}.
+% \begin{equation}
+%     \label{eq:spiral}
+%     \text{\textit{Work Done}} = F_f r\theta \equiv T\theta
+% \end{equation}
+% where \(r\) is the radius of the flywheel, \(F_f\) is (assumedly point) tangential force exerted onto the flywheel, and \(\theta\) is the total angle which flywheel travels (in radians), given to be \(2\pi N\) per \(N\) spiral turns.
+
+% Equating \eqref{eq:epe} and \eqref{eq:spiral} (per Conservation of Energy and the full-efficiency assumption) results in an expression for force.
+% \begin{equation*}
+%     \frac{1}{2}kx^2 = 2\pi NFr = 2\pi NF_{edge}d
+% \end{equation*}
+
+% In the case of the equated expression, one could then obtain the tangential force exerted at the edge of the flywheel's body, per \eqref{eq:f_edge}.
+% \begin{equation}
+%     \label{eq:f_edge}
+%     \frac{1}{2}kx^2 = 2\pi NF_{edge}d
+% \end{equation}
+
+The expression for tangential force on the flywheel is given per \eqref{eq:flywheel}, where  
 \begin{equation}
-    \label{eq:epe}
-    \text{\textit{Work Done}} = \Delta PE = \frac{1}{2}kx^2
+    \label{eq:flywheel}
+    F = T\omega \equiv \frac{T\theta}{t}
+\end{equation}
+where \(F\) is (assumedly point) tangential force exerted onto the flywheel, and \(\omega\) is the angular velocity of the flywheel. In addition, \(\theta\) is the total angle which flywheel travels (in radians), and \(t\) is the time at which the spring reverts to its original length, and is variable by the person stepping onto the slab.
+
+It is to be noted that \(\theta\) is given to be \(2\pi Q\) per \(q\) spiral turns.
+
+
+\subsubsection{Equating}
+Provided that \eqref{eq:hooke} and \eqref{eq:flywheel} equate, one could obtain the expression for the raw torque obtained at the flywheel's edge, per \eqref{eq:equate}.
+\begin{equation}
+    \label{eq:equate}
+    T = \frac{-tkx}{2\pi Q}
 \end{equation}
 
-As the spiral rod passes through the opening gap inside the flywheel, force is exerted by the spiral rod incident to the opening's sides (assumed here to be point incidents), where work done by such action is given per \eqref{eq:spiral}.
-\begin{equation}
-    \label{eq:spiral}
-    \text{\textit{Work Done}} = Fr\theta \equiv T\theta
-\end{equation}
-where \(r\) is the radius from the centre of the flywheel's opening to its edges, \(F\) is (assumedly point) force exerted onto the opening at its edge, and \(\theta\) is the total angle which flywheel travels (in radians), given to be \(2\pi N\) per \(N\) spiral turns.
+However, the motor itself is to be connected via a buffer gear, which would allow one to vary the torque and angular velocity of the motor.
 
-Equating \eqref{eq:epe} and \eqref{eq:spiral} (per Conservation of Energy and the full-efficiency assumption) results in an expression for force.
+\subsection{Mechanical Output Characteristics}
+Since connecting the flywheel and the motor together results in the same tangential force, one could equate \(F\) and obtain an expression in terms of torque \& angular velocity of the motor, where such are \(T_m\) and \(\omega_m\), respectively.
+
 \begin{equation*}
-    \frac{1}{2}kx^2 = 2\pi NFr = 2\pi NF_{edge}d
+    F = T_m \omega_m
 \end{equation*}
 
-In the case of the equated expression, one could then obtain the tangential force exerted at the edge of the flywheel's body, per \eqref{eq:f_edge}.
+Given that the flywheel's attributed are controlled variables, one could only change the motor's gear and, provided the attributes of the flywheel's gear, could determine the ratio of turns between such gear connections.
+
+\begin{equation*}
+    \Gamma = \frac{N_{motor}}{N_{flywheel}}
+\end{equation*}
+
+And thus, one could then obtain the expression for the motor's torque \& angular velocity in terms of the flywheel's.
+
 \begin{equation}
-    \label{eq:f_edge}
-    \frac{1}{2}kx^2 = 2\pi NF_{edge}d
+    \label{eq:ratio}
+    F = T_{motor}\omega_{motor} = (T\Gamma)\left(\frac{\omega}{\Gamma}\right)
 \end{equation}
+
+Per \eqref{eq:ratio} one could observe that a decrease in the number of gear 'teeth' on the motor's, such reduces the coefficient, and thus reduces the motor's torque while increasing its angular velocity. Vice versa applies.
+
+Sufficient information has been provided to return to \eqref{eq:dcmotor:emf}; now that one has obtained the motor's characteristics, one could then equate such to those that one has explored prior as follows.
+
+\begin{align*}
+    V_a &= k_e(\omega_{f} \Gamma) - \left(\frac{T_{f}\Gamma}{k_e}\right)R_a \\
+    &=  k_e\left(\frac{2\pi Q}{t} \Gamma\right) - \left(\frac{1}{k_e}\right)\left(\frac{-tkx}{2\pi Q}\Gamma\right)R_a
+\end{align*}
+
+Given this, the only independent variable (provided components are static, thus its values fixed) to determine the output voltage of the mechanism is the time duration taken to reload the spring mechanism back to its original position.
 
 
 % \begin{subequations}
